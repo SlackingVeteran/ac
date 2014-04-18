@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="16" android:versionName="1.5.2" package="com.androidcentral.app"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:theme="@style/AppThemeLight" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.androidcentral.app.App" android:allowBackup="true" android:logo="@drawable/lloyd_logo">
+        <receiver android:name="com.androidcentral.app.widget.NewsWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/newswidgetinfo" />
+        </receiver>
+        <service android:name="com.androidcentral.app.widget.NewsWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" android:exported="false" />
+        <service android:name="com.androidcentral.app.net.NewsDataService" />
+        <activity android:label="@string/app_name" android:name="com.androidcentral.app.HomeActivity" android:logo="@drawable/lloyd_logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidcentral.app.ArticlePagerActivity" android:parentActivityName="com.androidcentral.app.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.androidcentral.com" />
+                <data android:scheme="http" android:host="androidcentral.com" />
+                <data android:scheme="http" android:host="m.androidcentral.com" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_article_comments" android:name="com.androidcentral.app.ArticleCommentsActivity" android:parentActivityName="com.androidcentral.app.ArticlePagerActivity" />
+        <activity android:label="@string/title_activity_new_comment" android:name="com.androidcentral.app.NewCommentActivity" android:parentActivityName="com.androidcentral.app.ArticleCommentsActivity" />
+        <activity android:label="@string/title_activity_login" android:name="com.androidcentral.app.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_forums_list" android:name="com.androidcentral.app.ForumsListActivity" android:parentActivityName="com.androidcentral.app.HomeActivity" />
+        <activity android:label="@string/title_activity_forum_topic" android:name="com.androidcentral.app.ForumTopicActivity" />
+        <activity android:label="@string/title_activity_forum_thread" android:name="com.androidcentral.app.ForumThreadActivity" />
+        <activity android:label="@string/title_activity_new_thread" android:name="com.androidcentral.app.NewThreadActivity" />
+        <activity android:label="@string/title_activity_forum_reply" android:name="com.androidcentral.app.ForumReplyActivity" />
+        <activity android:label="@string/title_activity_view_profile" android:name="com.androidcentral.app.ViewProfileActivity" />
+        <service android:name="com.androidcentral.app.media.MediaPlayerService" />
+        <activity android:theme="@style/FullscreenTheme" android:label="@string/title_activity_gallery" android:name="com.androidcentral.app.GalleryActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/title_activity_forum_report" android:name="com.androidcentral.app.ForumReportActivity" />
+        <activity android:label="@string/title_activity_forum_search" android:name="com.androidcentral.app.ForumSearchActivity" />
+        <activity android:label="@string/title_activity_forum_search_results" android:name="com.androidcentral.app.ForumSearchResultsActivity" />
+    </application>
+</manifest>

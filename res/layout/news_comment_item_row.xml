@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/article_comment_leftborder" android:background="@color/comment_border_color" android:layout_width="6.0dip" android:layout_height="55.0dip" android:layout_marginRight="3.0dip" />
+    <RelativeLayout android:id="@id/layout_comment_content" android:background="?card" android:paddingLeft="5.0dip" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/article_comment_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:contentDescription="@string/avatar" />
+        <LinearLayout android:orientation="vertical" android:id="@id/article_comment_content_container" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/article_comment_avatar">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textStyle="bold" android:textColor="?maintext_color" android:id="@id/article_comment_author" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="?subtext_grey" android:ellipsize="end" android:id="@id/article_comment_when" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

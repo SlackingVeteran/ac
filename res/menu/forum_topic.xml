@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ab_comment_new" android:id="@id/action_forum_new_thread" android:title="@string/new_thread" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_sub_unsub" android:id="@id/action_forum_subscribe" android:title="@string/subscribe" android:showAsAction="always" />
+</menu>

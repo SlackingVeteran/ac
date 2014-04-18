@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget_heading_frame" android:background="@color/actionbar_green" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/widget_heading_logo" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/lloyd_logo" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/widget_heading_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/news" android:layout_toRightOf="@id/widget_heading_logo" />
+        <FrameLayout android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/widget_refresh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ab_refresh" />
+            <ProgressBar android:id="@id/widget_refresh_anim" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:attr/indeterminateProgressStyle" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/widget_heading_frame">
+        <ListView android:gravity="center" android:id="@id/widget_news_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:loopViews="true" />
+    </FrameLayout>
+</RelativeLayout>

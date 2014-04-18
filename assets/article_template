@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="@{{CSS_FILENAME}}" />
+</head>
+
+<body>
+<div class="content">
+    <p class="title">@{{TITLE}}</p>
+    <p class="subtitle">@{{AUTHOR}} | @{{PUBLISHED}}</p>
+    <div class="body">
+        @{{CONTENT}}
+    </div>
+</div>
+</body>
+</html>

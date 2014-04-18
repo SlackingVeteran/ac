@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="News">
+        <ListPreference android:entries="@array/pref_sync_interval_entries" android:title="@string/sync_interval" android:key="pref_sync_interval" android:defaultValue="@string/pref_sync_default_value" android:dialogTitle="@string/sync_interval" android:entryValues="@array/pref_sync_interval_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Forums">
+        <EditTextPreference android:title="@string/forums_signature" android:key="pref_forums_signature" android:defaultValue="@string/pref_forums_signature_default" />
+        <ListPreference android:entries="@array/pref_open_entries" android:title="@string/thread_open_behavior" android:key="pref_open_behavior" android:defaultValue="@string/pref_open_default_value" android:dialogTitle="@string/open_behavior" android:entryValues="@array/pref_open_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Video Playback">
+        <CheckBoxPreference android:title="@string/fullscreen_video" android:key="pref_video_fullscreen" android:summary="@string/fullscreen_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="App Appearance">
+        <CheckBoxPreference android:title="@string/night_mode" android:key="pref_night_mode" android:summary="@string/night_mode_summary" android:defaultValue="false" />
+        <ListPreference android:entries="@array/font_size_entries" android:title="@string/font_size" android:key="pref_font_size" android:defaultValue="Small" android:dialogTitle="@string/font_size" android:entryValues="@array/font_size_entries" />
+        <ListPreference android:entries="@array/screen_animation_entries" android:title="@string/screen_animations" android:key="pref_screen_animation" android:defaultValue="Fade" android:dialogTitle="@string/screen_animations" android:entryValues="@array/screen_animation_entries" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="App Cache">
+        <Preference android:title="Clear Cache" android:key="clearCache" android:summary="" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About" android:key="about_category">
+        <Preference android:title="Feedback" android:key="emailFeedbackSettings" android:summary="Please send us questions, comments or suggestions" />
+        <Preference android:title="Privacy Policy" android:summary="Read the Privacy Policy">
+            <intent android:action="android.intent.action.VIEW" android:data="http://www.mobilenations.com/privacy-policy.html" />
+        </Preference>
+        <Preference android:title="Version" android:key="versionPreference" />
+    </PreferenceCategory>
+</PreferenceScreen>

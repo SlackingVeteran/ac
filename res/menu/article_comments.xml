@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ab_comment_new" android:id="@id/action_comments_new" android:title="@string/new_comment" android:showAsAction="always" />
+    <item android:id="@id/action_comments_refresh" android:title="@string/refresh" android:showAsAction="never" />
+</menu>

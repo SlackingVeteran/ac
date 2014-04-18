@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ab_shop_cart" android:id="@id/action_shop_cart" android:title="@string/cart" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_shop_care" android:id="@id/action_shop_care" android:title="@string/customer_care" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_shop_status" android:id="@id/action_shop_status" android:title="@string/order_status" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_shop_call" android:id="@id/action_shop_call" android:title="@string/call_us" android:showAsAction="always" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ab_gallery" android:id="@id/menu_item_gallery" android:title="@string/image_gallery" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_comments" android:id="@id/menu_item_comments" android:title="@string/comments" android:showAsAction="always" />
+    <item android:id="@id/menu_item_share" android:title="@string/share" android:showAsAction="ifRoom" android:actionProviderClass="android.widget.ShareActionProvider" />
+    <item android:id="@id/menu_item_article_browser" android:title="@string/open_in_browser" android:showAsAction="never" />
+    <item android:id="@id/menu_item_article_copy_url" android:title="@string/copy_url" android:showAsAction="never" />
+</menu>

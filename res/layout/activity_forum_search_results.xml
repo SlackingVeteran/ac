@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.viewpagerindicator.TabPageIndicator android:id="@id/search_result_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v4.view.ViewPager android:id="@id/search_result_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:layout_gravity="start" android:id="@id/menu_list" android:background="@color/menu_background" android:layout_width="240.0dip" android:layout_height="fill_parent" android:divider="@*android:color/black" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+</android.support.v4.widget.DrawerLayout>

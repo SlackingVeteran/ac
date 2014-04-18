@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_animation_entries">
+        <item>None</item>
+        <item>Fade</item>
+        <item>Zoom</item>
+    </string-array>
+    <string-array name="font_size_entries">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="sign_options">
+        <item>Log In</item>
+        <item>Sign Up</item>
+    </string-array>
+    <string-array name="menu_items">
+        <item>Home</item>
+        <item>Forums</item>
+        <item>Videos</item>
+        <item>Podcasts</item>
+        <item>Wallpapers</item>
+        <item>Shop</item>
+        <item>Tip Us</item>
+        <item>Account</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="forum_search_sections">
+        <item>THREADS</item>
+        <item>POSTS</item>
+    </string-array>
+    <string-array name="forum_topic_sections">
+        <item>THREADS</item>
+        <item>STICKIES</item>
+    </string-array>
+    <string-array name="pref_sync_interval_entries">
+        <item>Manual</item>
+        <item>Every 5 mins</item>
+        <item>Every 15 mins</item>
+        <item>Every 30 mins</item>
+    </string-array>
+    <string-array name="pref_sync_interval_values">
+        <item>0</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="pref_open_entries">
+        <item>First unread post</item>
+        <item>First post</item>
+    </string-array>
+    <string-array name="pref_open_values">
+        <item>unread</item>
+        <item>first</item>
+    </string-array>
+</resources>

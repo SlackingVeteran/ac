@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ab_comment_new" android:id="@id/action_thread_new_comment" android:title="@string/new_comment" android:showAsAction="always" />
+    <item android:icon="@drawable/ab_sub_unsub" android:id="@id/action_thread_subscribe" android:title="@string/subscribe" android:showAsAction="always" />
+    <item android:id="@id/action_thread_refresh" android:title="@string/refresh" android:showAsAction="never" />
+    <item android:id="@id/action_thread_browser" android:title="@string/open_in_browser" android:showAsAction="never" />
+    <item android:id="@id/action_thread_copy_url" android:title="@string/copy_url" android:showAsAction="never" />
+</menu>

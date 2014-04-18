@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?card" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:textStyle="bold" android:id="@id/thread_title" android:paddingLeft="5.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="?subtext_grey" android:id="@id/thread_subtitle" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/thread_title" android:layout_alignLeft="@id/thread_title" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="@color/actionbar_green" android:ellipsize="end" android:gravity="center" android:id="@id/thread_comment_count" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/thread_subtitle" android:layout_below="@id/thread_title" />
+    </RelativeLayout>
+</FrameLayout>

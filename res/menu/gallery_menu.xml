@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_gallery_setwallpaper" android:title="@string/set_wallpaper" android:showAsAction="never" />
+    <item android:id="@id/action_gallery_download" android:title="@string/download" android:showAsAction="never" />
+    <item android:id="@id/action_gallery_view_native" android:title="@string/view_in_gallery" android:showAsAction="never" />
+</menu>
